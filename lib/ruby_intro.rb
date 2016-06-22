@@ -39,7 +39,7 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  return s.length  == 0 || s =~ /^[aeiou\W]/i? false: true
+  return s =~ /^[aeiou\W]|^$/i? false : true
 end
 
 def binary_multiple_of_4? s
