@@ -3,6 +3,7 @@
 # Part 1
 
 def sum arr
+
   sum = 0
   
   arr.each do |value|
@@ -10,6 +11,7 @@ def sum arr
   end
   return sum
 end
+
 
 def max_2_sum arr
   return sum(arr.max(2))
@@ -37,7 +39,7 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  return s.length  == 0 || s =~ /\W/ || s =~ /^[aeiou]/i? false: true
+  return s.length  == 0 || s =~ /^[aeiou\W]/i? false: true
 end
 
 def binary_multiple_of_4? s
