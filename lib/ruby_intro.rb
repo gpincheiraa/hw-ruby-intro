@@ -1,7 +1,3 @@
-# When done, submit this entire file to the autograder.
-
-# Part 1
-
 def sum arr
 
   sum = 0
@@ -11,7 +7,6 @@ def sum arr
   end
   return sum
 end
-
 
 def max_2_sum arr
   return sum(arr.max(2))
@@ -39,7 +34,7 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  return s =~ /^[aeiou\W]|^$/i? false : true
+  return s =~ /^[^bcdfghjklmnpqrstvwxyz]|^$/i? false : true
 end
 
 def binary_multiple_of_4? s
